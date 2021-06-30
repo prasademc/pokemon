@@ -1,0 +1,33 @@
+.starters {
+    width: 38.375rem;
+    height: auto;
+    margin: 6.25rem auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+
+    @include mobile() {
+        margin-top: 10rem;
+    }
+
+    @include tablet() {
+        margin-top: 8rem;
+    }
+
+    &__title {
+        color: $white;
+    }
+
+    &__square {
+        width: 100%;
+        background-color: $white;
+        border-radius: 24px 24px 100px 100px;
+        padding: 1.25rem;
+        margin: 0 0 3.875rem 0;
+
+        & > p {
+            padding: 0 1.5625rem;
+        }
+    }
+}

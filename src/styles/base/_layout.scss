@@ -1,0 +1,65 @@
+html, body {
+    background-color: $white;
+    font-weight: 400;
+    font-size: 1rem;
+    font-family: 'Sigmar One', Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(176deg, $white 235px, $primary 235px);
+}
+
+.container {
+    max-width: $desktop-xlarge;
+    min-height: 100vh;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+
+    @include mobile() {
+         max-width: 100%;
+    }
+
+    @include tablet() {
+        max-width: 100%;
+    }
+
+    @include smalldesktop() {
+            max-width: 100%;
+    }
+
+    &__title {
+        transform: rotate(-4deg);
+        color: $primary;
+        position: relative;
+        top: 3.5rem;
+        @include mobile() {
+            top: 8rem;
+        }
+
+        @include tablet() {
+            top: 6.125rem;
+        }
+
+        @include smalldesktop() {
+            top: 4.125rem;
+        }
+    }
+
+    &__card-list {
+        margin: 0 11.25rem;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        @include mobile() {
+            margin: 0 0.625rem;
+        }
+
+        @include tablet() {
+            margin: 0 0.625rem;
+        }
+
+        @include smalldesktop() {
+            margin: 0 0.625rem;
+        }
+    }
+}

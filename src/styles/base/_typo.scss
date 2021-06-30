@@ -1,0 +1,46 @@
+h1, h2, h3, h4 {
+    font-family: 'Sigmar One', Arial, Helvetica, sans-serif;
+}
+
+h5, h6, p {
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-size: 9.375rem;
+    line-height: 1;
+
+    @include mobile() {
+        font-size: 6.25rem;
+    }
+
+    @include tablet() {
+        font-size: 7.5rem;
+    }
+}
+
+h2 {
+    font-size: 3rem;
+    line-height: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+h4 {
+    font-size: 1rem;
+}
+
+h5, h6 {
+    font-weight: 800;
+    font-size: 0.875rem;
+}
+
+p {
+    font-size: 0.875rem;
+}
+
+p.small {
+    font-size: 0.75rem;
+}

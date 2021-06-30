@@ -1,0 +1,68 @@
+.card {
+    width: calc(20% - 1.25rem);
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0.625rem;
+
+    @include mobile() {
+        width: calc(50% - 1.25rem);
+        margin-bottom: 1rem;
+    }
+
+     @include tablet() {
+        width: calc(33.33% - 1.25rem);
+        margin-bottom: 1rem;
+    }
+
+    &.odd {
+        margin-top: 5rem;
+        @include mobile() {
+            margin-top: 0;
+        }
+
+        @include tablet() {
+            margin-top: 0;
+        }
+    }
+
+    &__title {
+        color: $white;
+        margin-bottom: 0.625rem;
+    }
+
+    &__image {
+        width: 10.75rem;
+        height: 10.75rem;
+        border-radius: 50%;
+        background-color: $white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+        &::before {
+            content: '';
+            width: 12rem;
+            height: 12rem;
+            position: absolute;
+            border-radius: 50%;
+            background-color: transparent;
+            border: 0.625rem dashed $black;
+        }
+    }
+
+    &__subtitle {
+        margin-top: 1.25rem;
+        color: $white;
+    }
+
+    &__para {
+        color: $white;
+        text-align: center;
+        padding: 0 1rem;
+    }
+}
